@@ -1,0 +1,14 @@
+<div class="row ">
+  <div class="col-10 form-group">
+      <h3>Create your best 11</h3>
+    <input [(ngModel)]="nameOfCricketer"
+      class="form-control form-control-lg"
+      type="text"
+      placeholder="Cricketer Name"
+      id="cricketerName"
+    />
+
+    <button [disabled]="nameOfCricketer===''" class="btn btn-primary mt-1 float-right" (click)="addCricketer()">Add Cricketer</button>
+  </div>
+
+</div>

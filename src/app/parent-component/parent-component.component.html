@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-12">
+    <app-child-component
+      (crickname)="getCrickName($event)"
+    ></app-child-component>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <ul>
+      <li style="list-style:none;" *ngFor="let name of cricketersAdded; let i=index" ><h3 *ngIf="i < 11" [ngStyle]="{backgroundColor:'#c9d4c9', width: '18em', padding: '0.5em'}">{{i+1}} {{ name }} <button class="btn btn-small btn-danger float-right" (click)="deleteCricketer(i)">Remove</button> </h3></li>
+    </ul>
+  </div>
+</div>
+ 
