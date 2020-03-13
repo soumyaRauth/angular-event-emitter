@@ -27,8 +27,14 @@ export class ParentComponentComponent implements OnInit {
     if (i>-1){
       this.cricketersAdded.splice(i,1);
     }
+  }
+
+
+  getRandomPlayer(playerName){
+    console.log("playerName");
+    console.log(playerName);
     
-    
+    this.cricketersAdded.push(playerName);
   }
 
   ngOnInit(): void {}
