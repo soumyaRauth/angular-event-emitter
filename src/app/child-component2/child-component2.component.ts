@@ -1,9 +1,10 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from "@angular/core";
 
 @Component({
   selector: "app-child-component2",
   templateUrl: "./child-component2.component.html",
-  styleUrls: ["./child-component2.component.scss"]
+  styleUrls: ["./child-component2.component.scss"], 
+  // encapsulation:ViewEncapsulation.None
 })
 export class ChildComponent2Component implements OnInit {
   @Output() randomPlayer = new EventEmitter<string>();

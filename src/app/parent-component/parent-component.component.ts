@@ -1,9 +1,10 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit,ViewEncapsulation } from "@angular/core";
 import { Cricketer } from "./parent-component.model";
 @Component({
   selector: "app-parent-component",
   templateUrl: "./parent-component.component.html",
-  styleUrls: ["./parent-component.component.scss"]
+  styleUrls: ["./parent-component.component.scss"],
+  encapsulation:ViewEncapsulation.None
 })
 export class ParentComponentComponent implements OnInit {
   // cricketer:Cricketer[]=[
